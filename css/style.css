@@ -233,3 +233,58 @@ header {
     transform: rotate(-2deg);
     z-index: -1;
 }
+
+/*       MAIN       */
+
+/*   SERVICES   */
+.main_services {
+    width: 100%;
+    margin: 100px 0 0;
+}
+.services-container {
+    width: 1250px;
+    margin: auto;
+}
+.services-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    color: #050C33;
+    margin-bottom: 12px;
+}
+.services-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #050C33;
+    opacity: 0.7;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 60px;
+    margin: 80px 20px 0
+}
+[class^="service-description-"] {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #050C33;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+[class^="service-content-"] {
+    position: relative;
+}
+[class^="service-content-"]::before {
+    background: url("../img/icon-bg.svg") no-repeat;
+    left: -17%;
+    right: 67.58%;
+    top: 8.76%;
+    bottom: 54.64%;
+    content: "";
+    height: 71px;
+    width: 114px;
+    position: absolute;
+}
