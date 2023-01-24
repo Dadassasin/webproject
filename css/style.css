@@ -628,7 +628,53 @@ header {
     text-transform: uppercase;
     color: #050C33;
 }
-
+/*   TASKS   */
+.main_tasks {
+    width: 100%;
+    margin-top: 170px;
+}
+.tasks-content-container {
+    width: 1250px;
+    margin: auto;
+}
+.tasks-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+}
+.tasks-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    margin-bottom: 60px;
+}
+.task {
+    position: relative;
+}
+.task::before {
+    background: url("../img/icon-bg.svg") no-repeat;
+    left: -14%;
+    right: 67.58%;
+    top: 7%;
+    bottom: 54.64%;
+    content: "";
+    height: 71px;
+    width: 114px;
+    position: absolute;
+}
+.task-img {
+    margin-bottom: 15px;
+}
+.task-title {
+    font-weight: 700;
+}
+.task-description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #050C33;
+    opacity: 0.7;
+}
 
 
 
