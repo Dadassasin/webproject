@@ -675,6 +675,72 @@ header {
     color: #050C33;
     opacity: 0.7;
 }
+/*   TEAM   */
+.main_team {
+    width: 100%;
+    margin-top: 200px;
+}
+.team-content-container {
+    width: 1250px;
+    margin: auto;
+}
+.team-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    color: #050C33;
+    margin-bottom: 80px;
+}
+.team-members-list {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 120px;
+    grid-row-gap: 55px;
+    padding: 0 85px;
+}
+.member-photo {
+    margin-bottom: 30px;
+    width: 280px;
+    height: 280px;
+}
+.member-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #050C33;
+}
+.member-description {
+    font-size: 16px;
+    line-height: 22px;
+    color: #050C33;
+    opacity: 0.9;
+}
+.all-team-button-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.all-team-button {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 22px 20px;
+    width: 240px;
+    max-width: 100%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+}
+.all-team-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    transition: background 300ms;
+}
 
 
 
