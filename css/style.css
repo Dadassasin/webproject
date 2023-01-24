@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+}
+a:active,
+a:hover,
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+
+/*       HEADER       */
+
+header {
+    min-height: 650px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+/*  MENU   */
+.header-menu-container {
+    max-width: 1250px;
+    height: 100px;
+    margin: auto;
+}
+.menu {
+    display: flex;
+    padding-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: white;
+}
+.top-menu {
+    margin-bottom: 0;
+    list-style: none;
+}
+.header-logo-img {
+    width: 190px;
+    height: 50px;
+}
+.header-logo {
+    margin-right: auto;
+}
+.menu ul {
+    list-style: none;
+}
+.links {
+    height: fit-content;
+    padding: 13px 0;
+}
+.links a {
+    text-decoration: none;
+    outline: none;
+}
+.top-menu > li {
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+}
+.top-menu > li:last-child {
+    margin-right: 0;
+}
+.menu-link {
+    width: fit-content;
+    border-bottom: 3px solid transparent;
+    height: fit-content;
+    padding: 5px 0;
+}
+.menu-link:hover {
+    border-bottom: 3px solid #f14d34;
+    transition: border-color 400ms;
+}
+[class^="submenu-"] {
+    display: none;
+    background: #f14d34;
+    position: absolute;
+    top: 89%;
+    left: 0;
+    padding: 5px 0;
+}
+[class^="submenu-"] a:hover {
+    background-color: #d13018;
+    transition: background-color 400ms;
+}
+[class^="submenu-"] li {
+    width: 100%;
+}
+[class^="submenu-"] li a {
+    padding: 6px 15px;
+    width: 100%;
+}
+.links ul li:hover [class^="submenu-"] {
+    display: block;
+}
+.submenu-1 {
+    width: 225px;
+}
+.submenu-2 {
+    width: 140px;
+}
+#menu-button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    margin-right: 10px;
+    padding: 0 1px;
+}
+.menu-button-bar {
+    margin-bottom: 5px;
+    background-color: #888;
+    width: 100%;
+    height: 3px;
+    display: block;
+    border-radius: 10px;
+}
+.menu-button-bar:last-child {
+    margin-bottom: 0;
+}
+
+
+/*   CONTENT   */
+.header-content-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1250px;
+    height: 550px;
+    align-items: center;
+    margin: auto;
+    color: white;
+    flex-direction: row;
+}
+.content-title-and-button {
+    display: grid;
+    grid-template-rows: 1fr 60px 1fr;
+    grid-row-gap: 20px;
+    margin-right: auto;
+}
+.content-title {
+    font-size: 52px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.content-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.content-button {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 22px 20px;
+    width: 220px;
+    height: fit-content;
+    max-width: 100%;
+    text-align: center;
+    border: 2px solid #f14d34;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+.content-button:hover {
+    transition: background 300ms;
+    background-color: #f14d34;
+}
+.content-achievements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 104px 80px;
+    grid-column-gap: 60px;
+    grid-row-gap: 96px;
+}
+#achievement-1-title-wrapper {
+    display: flex;
+}
+[class^="achievement-"] {
+    border-left: 3px solid #f14d34;
+    padding-left: 8px;
+}
+[class^="achievement-"] p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 0.7;
+    margin-top: 4px;
+}
+[class^="achievement_title-"] {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+.achievement_title-1 {
+    font-size: 48px;
+    line-height: 59px;
+}
+.achievement_1-img {
+    width: 59px;
+    height: 58px;
+}
+
+
+/*   CONTENT BACKGROUND   */
+.header-background-video {
+    width: 100%;
+    max-height: 900px;
+    height: 650px;
+    filter: brightness(25%);
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.header-background-druplicon {
+    position: absolute;
+    width: 887px;
+    height: 943px;
+    left: -100px;
+    top: -50px;
+    transform: rotate(-2deg);
+    z-index: -1;
+}

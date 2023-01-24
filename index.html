@@ -1,10 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Drupal Coder - разработка сайтов на drupal</title>
+  <link rel="icon" href="./img/android-chrome-256x256.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8563caf27d.js" crossorigin="anonymous"></script>
+  <script src="./libraries/jquery-3.6.3.js"></script>
 </head>
 <body>
-
+<!--ХЕДЕР-->
+<header>
+  <!--ЛОГОТИП И МЕНЮ НАВИГАЦИИ-->
+  <div class="header-menu-container">
+    <div class="menu">
+      <a href="#" class="header-logo"><img src="./img/drupal-coder.svg" alt="drupal-coder" class="header-logo-img"></a>
+      <nav id="links" class="links">
+        <ul class="top-menu">
+          <li><a href="#" class="menu-link">ПОДДЕРЖКА DRUPAL</a></li>
+          <li class="submenu_wrapper"><a href="#" class="menu-link">АДМИНИСТРИРОВАНИЕ ▼</a>
+            <ul class="submenu-1">
+              <li><a href="#">МИГРАЦИЯ</a></li>
+              <li><a href="#">БЭКАПЫ</a></li>
+              <li><a href="#">АУДИТ БЕЗОПАСНОСТИ</a></li>
+              <li><a href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a></li>
+              <li><a href="#">ПЕРЕЕЗД НА HTTPS</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menu-link">ПРОДВИЖЕНИЕ</a></li>
+          <li><a href="#" class="menu-link">РЕКЛАМА</a></li>
+          <li class="submenu_wrapper"><a href="#" class="menu-link">О НАС ▼</a>
+            <ul class="submenu-2">
+              <li><a href="#">КОМАНДА</a></li>
+              <li><a href="#">DRUPALGIVE</a></li>
+              <li><a href="#">БЛОГ</a></li>
+              <li><a href="#">КУРСЫ DRUPAL</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menu-link">ПРОЕКТЫ</a></li>
+          <li><a href="#" class="menu-link">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <button id="menu-button">
+        <span class="menu-button-bar"></span>
+        <span class="menu-button-bar"></span>
+        <span class="menu-button-bar"></span>
+      </button>
+    </div>
+  </div>
+  <!--КОНТЕНТ-->
+  <div class="header-content-container">
+    <div class="content-title-and-button">
+      <div class="title-wrapper">
+        <h1 class="content-title">Поддержка<br> сайтов на Drupal</h1>
+      </div>
+      <div class="content-subtitle-wrapper">
+        <p class="content-subtitle">Сопровождение и поддержка сайтов<br>
+          на CMS Drupal любых версий и запущенности</p>
+      </div>
+      <div class="content-button-wrapper">
+        <a href="#" class="content-button">ТАРИФЫ</a>
+      </div>
+    </div>
+    <div class="content-achievements">
+      <div class="achievement-1">
+        <div id="achievement-1-title-wrapper">
+          <span class="achievement_title-1">#1</span>
+          <img src="./img/cup.png" alt="cup" class="achievement_1-img">
+        </div>
+        <p>Drupal-разработчик<br>
+          в России по версии<br>
+          Рейтинга Рунета</p>
+      </div>
+      <div class="achievement-2">
+        <span class="achievement_title-2">3+</span>
+        <p>средний опыт<br>
+          специалистов более<br>
+          3 лет</p>
+      </div>
+      <div class="achievement-3">
+        <span class="achievement_title-3">14</span>
+        <p>лет опыта в сфере<br>
+          Drupal</p>
+      </div>
+      <div class="achievement-4">
+        <span class="achievement_title-4">50+</span>
+        <p>модулей и тем<br>
+          в формате DrupalGive</p>
+      </div>
+      <div class="achievement-5">
+        <span class="achievement_title-5">90 000+</span>
+        <p>часов поддержки<br>
+          сайтов на Drupal</p>
+      </div>
+      <div class="achievement-6">
+        <span class="achievement_title-6">300+</span>
+        <p>Проектов<br>
+          на поддержке</p>
+      </div>
+    </div>
+  </div>
+  <video class="header-background-video" autoplay loop muted>
+    <source src="video/video.mp4" type="video/mp4">
+  </video>
+  <img class="header-background-druplicon" src="./img/druplicon.svg" alt="druplicon">
+</header>
 </body>
 </html>
